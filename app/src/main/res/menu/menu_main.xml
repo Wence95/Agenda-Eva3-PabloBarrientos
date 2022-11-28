@@ -11,12 +11,18 @@
         android:id="@+id/icon_delete"
         android:icon="@drawable/ic_delete"
         app:showAsAction="always"
-        android:title="Agregar"
+        android:title="Borrar"
         />
     <item
         android:id="@+id/icon_save"
         android:icon="@drawable/ic_save"
         app:showAsAction="always"
-        android:title="Agregar"
+        android:title="Guardar"
+        />
+    <item
+        android:id="@+id/icon_clean"
+        android:icon="@drawable/ic_clean"
+        app:showAsAction="always"
+        android:title="Limpiar"
         />
 </menu>

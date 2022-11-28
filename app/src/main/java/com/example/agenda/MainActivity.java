@@ -153,6 +153,16 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
                 break;
+            case R.id.icon_clean:
+                long currentDate = Calendar.getInstance().getTimeInMillis();
+                for (Evento evento : listaEventos){
+                    if(evento.getFecha() < currentDate) {
+                        databaseReference.child("Evento").child(evento.getUid()).removeValue();
+                    }
+                }
+                limpiar();
+                Toast.makeText(this, "Eventos anteriores a hoy fueron eliminados", Toast.LENGTH_SHORT).show();
+                break;
 
         }
         return true;
