@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string-array name="asuntos">
+        <item>Personal</item>
+        <item>Trabajo</item>
+        <item>Médica</item>
+        <item>Recreativa</item>
+        <item>Otra</item>
+    </string-array>
+</resources>
